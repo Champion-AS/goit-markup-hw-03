@@ -14,15 +14,28 @@ ul {
     list-style: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .container {
     max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 0;
-    margin-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
-    background-color: aqua;
+    /*background-color: aqua;*/
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -82,6 +95,8 @@ h1,h2,h3,h4,h5,h6,p {
     text-align: center;
 }
 .hero-title {
+    padding-top: 280px;
+    padding-bottom: 30px;
     color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
@@ -127,9 +142,12 @@ h1,h2,h3,h4,h5,h6,p {
 } 
 
 /*секции достоинства*/
+.section-dignity .container {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
 .section-dignity .title{
-    margin-top: 0;
-    margin-bottom: 10;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -138,12 +156,13 @@ h1,h2,h3,h4,h5,h6,p {
     text-transform: uppercase;
 }
 .section-dignity .text {
-    margin-top: 0;
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    max-width: 270px;
+    padding-top: 10px;
 }
 
 /*секция иконки*/
@@ -159,9 +178,15 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 /*секция команда*/
+.section-icon {
+    max-height: 368px;
+    max-width: 270px;
+    text-align: center;
+}
+
 .section-team .title-dreams {
-    margin-top: 94px;
-    margin-bottom: 50px;
+    padding-top: 94px;
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -169,22 +194,20 @@ h1,h2,h3,h4,h5,h6,p {
     letter-spacing: 0.03em;
 }
 .section-team .title {
-    margin-top: 30px;
-    margin-bottom: 10;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    padding-top: 30px;
 }
-.section-team .text{
-    margin-top: 0;
-    margin-bottom: 30px;
+.section-team .text{    
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height:1.19;
     letter-spacing: 0.03em;
+    padding-top: 10px;
 }
 .section-team {
     padding-top: 94px;
@@ -196,14 +219,18 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 /*Проэкт*/
-.filters {
-    margin-top: 94px;
-    margin-bottom: 94px;
+.project-icon {
+    max-height: 370px;
+    max-width: 404px;
+    text-align: center;
 }
-
 .filters .container {
-    margin-top: 0;
+    margin-top: 94px;
     margin-bottom: 34px;
+}
+.project .container {
+    margin-top: 0;
+    margin-bottom: 94px;
 }
 .project .title {
     color: var(--title-text-color);
@@ -212,7 +239,6 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 2;
     letter-spacing: 0.06em;
     padding-top: 20px;
-    padding-bottom: 0;
 }
 .project .text {
     color: var(--primary-text-color);
@@ -221,7 +247,6 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 30px;
     letter-spacing: 0.03em;
     padding-top: 4px;
-    padding-bottom: 20px;
 }
 .project a {
     text-decoration: none;
@@ -234,6 +259,7 @@ footer address {
 }
 .page-footer {
     background-color: #2F303A;
+    padding: 60px 0;
 }
 .logo-footer {
 color: #2196F3;
@@ -266,4 +292,7 @@ text-decoration: none;
 }
 .nav-footer :hover,:focus {
     color: #2196F3;
+}
+.nav-footer {
+    padding-top: 20px;
 }
