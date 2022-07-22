@@ -65,6 +65,8 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+  font-weight: normal;
 }
 
 header .logo span {
@@ -121,9 +123,10 @@ header .contact-nav li a:focus {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
-  padding-top: 200px;
   padding-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
@@ -145,7 +148,6 @@ header .contact-nav li a:focus {
   border-radius: 4px;
   border: transparent;
   padding: 10px 32px;
-  margin-bottom: 200px;
 }
 
 .filters .dutton {
@@ -179,8 +181,8 @@ header .contact-nav li a:focus {
 
 /*секции достоинства*/
 .section-dignity .container {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-dignity .title {
@@ -231,8 +233,7 @@ header .contact-nav li a:focus {
 }
 
 .section-team .title-dreams {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -294,7 +295,7 @@ header .contact-nav li a:focus {
   text-decoration: none;
 }
 .filters .project {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -302,7 +303,6 @@ header .contact-nav li a:focus {
 
 .filters .project li a {
   display: block;
-  text-align: center;
 }
 
 /*Футер*/
@@ -321,6 +321,7 @@ footer address {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 .accent-footer {
   color: #ffffff;
@@ -340,11 +341,12 @@ footer address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  padding-top: 9px;
 }
 .nav-footer :hover,
 :focus {
   color: #2196f3;
 }
 .nav-footer {
-  padding-top: 20px;
+  margin-top: 20px;
 }
